@@ -1,0 +1,516 @@
+  /* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.grandparent{
+    display: inline-flex;   
+    width: 100%;
+}
+
+.image{
+    background-color: rgb(253, 253, 253);
+    margin-top: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+ 
+
+
+
+.form .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+
+.form .logo .text-img {
+    width: 175px; 
+    height: auto;
+}
+
+.form{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+input{
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 250px;
+    height: 25px;
+    margin-bottom: 10px;
+    background-color: rgb( 243, 245, 247);
+    border:  1px solid  rgb(198, 199, 199);
+}
+
+button{
+    width: 270px;
+    height: 30px;
+    background-color: #4a5df9;
+    color: white;
+    border:#4a5df9 ;
+    border-radius: 7px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.underline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    margin: auto;
+}
+
+.underline span{
+    padding: 0px 10px;
+}
+
+.underline::before,
+.underline::after{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+}
+.good{
+    color: #4a5df9;
+    font-weight: 60;
+}
+.bad{
+    color: black;
+    font-size: small;
+    letter-spacing: 0px;
+    font-weight: 700;
+}
+h4{
+    font-weight: 200;
+    font-size: medium;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 5px 10px;      
+    font-size: 12px;
+    color: #8e8e8e;        
+    cursor: pointer;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+footer .copy {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-top: 10px;
+}
+
+
+     */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main Container */
+.grandparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 935px;
+    width: 100%;
+    padding: 30px 10px 0;
+    margin: 0 auto;
+    gap: 32px;
+}
+
+/* Left Phone Image - Size Adjusted */
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.image img {
+    max-width: 600px;      /* Adjusted size */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Right Form Section */
+.form {
+    flex: 1;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* Instagram Logo/Text Image - Size Adjusted */
+.text-img {
+    width: 180px;          /* Instagram logo exact size */
+    height: 100px;
+    margin-bottom: 20px;   /* Instagram exact spacing */
+    object-fit: contain;
+}
+
+/* Login Form Container - NO BACKGROUND COLOR */
+.form > form {
+    width: 100%;
+    border: none;          /* No border */
+    background: none;      /* No background color */
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input Fields */
+input {
+    width: 80%;
+    padding: 9px 8px 7px 8px;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #262626;
+    margin-bottom: 6px;
+    height: 36px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #a8a8a8;
+}
+
+input::placeholder {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+/* Login Button */
+button {
+    width: 80%;
+    padding: 7px 16px;
+    /* background-color: #4cb5f9; */
+    background-color: #8793ff;  
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    height: 32px;
+    margin-top: 14px;      /* Instagram exact margin */
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #8793ff;
+}
+
+/* Divider Line */
+.underline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 18px 0;        /* Instagram exact margin */
+    position: relative;
+}
+
+.underline::before,
+.underline::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.underline span {
+    color: #8e8e8e;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 18px;
+    text-transform: uppercase;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.good {
+    color: #0095f6;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;   /* Instagram exact spacing */
+    font-size: 14px;
+}
+
+.good:hover {
+    text-decoration: underline;
+}
+
+.bad {
+    color: #00376b;
+    font-size: 12px;
+    display: block;
+    margin-top: 12px;
+}
+
+.bad:hover {
+    text-decoration: underline;
+}
+
+/* Signup Box - NO BACKGROUND COLOR */
+.signup-box {
+    width:80%;
+    /* border: 1px solid #dbdbdb; */
+    border-radius: 1px;
+    padding: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff;  /* White background for signup box only */
+}
+
+.signup-box h4 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #262626;
+    margin: 0;
+}
+
+.signup-link {
+    color: #444eaa;
+    font-weight: 600;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* Get App Section */
+.get-app {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.get-app p {
+    margin: 10px 0;
+    color: #262626;
+    font-size: 14px;
+}
+
+.app-badges {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.app-badges img {
+    height: 40px;
+    width: 136px;
+    object-fit: contain;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    max-width: 935px;
+    padding: 20px 0 40px;
+    margin-top: auto;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 16px;
+    gap: 8px 16px;
+    padding: 0 20px;
+}
+
+footer ul li {
+    color: #8e8e8e;
+    font-size: 12px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+/* Language Selector and Copyright */
+.footer-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.language-selector {
+    color: #8e8e8e;
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.copyright {
+    color: #535353;
+    font-size: 12px;
+    background-color: rgb(167, 168, 168);
+}
+
+/* Responsive Design */
+@media (max-width: 875px) {
+    .grandparent {
+        flex-direction: column;
+        padding-top: 32px;
+        gap: 0;
+    }
+    
+    .image {
+        display: none;
+    }
+    
+    .form {
+        margin-top: 0;
+        padding: 20px;
+    }
+    
+    .form > form {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+    
+    .signup-box {
+        background-color: transparent;
+        border: 1px solid #dbdbdb;
+    }
+    
+    body {
+        background-color: #fafafa;
+    }
+}
+
+@media (max-width: 450px) {
+    .grandparent {
+        padding: 0;
+    }
+    
+    .form {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .signup-box {
+        background-color: transparent;
+        border: none;
+    }
+    
+    footer {
+        padding: 20px;
+    }
+    
+    footer ul {
+        padding: 0;
+    }
+}
+
+/* Password field specific */
+input[type="password"] {
+    letter-spacing: 1px;
+}
+
+/* Button disabled state */
+button:disabled {
+    background-color: rgba(0, 149, 246, 0.3);
+    cursor: not-allowed;
+}
+
+/* Input focus effects */
+input:focus {
+    border-color: #a8a8a8;
+    box-shadow: 0 0 0 1px rgba(0, 149, 246, 0.1);
+}
+
+/* Exact Instagram spacing */
+.form p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Form elements spacing */
+form br {
+    display: none;
+}
+
+/* Adjust for existing br tags in HTML */
+form br {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    height: 0;
+}
